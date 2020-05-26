@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <script type="text/javascript" src="assign.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <title style="color: black;">
+            Aide-mémoire
+        </title>
+        <link rel="icon" href="icon.jpg">
+    </head>
+    <body>
+        
+        <header class="jumbotron" style="color: black;">
+            <h1 style="text-decoration-color: blanchedalmond;">Aide-mémoire</h1>
+            <h3>Note It!</h3>
+        </header>
+
+
+  <br>
+  <div class="box" class="container" >
+    <br>
+    <br>
+    <br>
+    <a id="color1" onclick="changecolor('color1')">#494B68</a>
+    <a id="color2" onclick="changecolor('color2')">#A6607C</a>
+    <a id="color3" onclick="changecolor('color3')">#806543</a>
+    <a id="color4" onclick="changecolor('color4')">#CCCCCC</a>
+    <a id="color5" onclick="changecolor('color5')">#FEF9C7</a>
+  </div>
+
+  <script type="text/javascript">
+  function changecolor(id) {
+    document.body.style.background=document.getElementById(id).innerHTML;
+    
+  }
+
+  </script>
+
+    <script>
+      function myFunction() {
+        var list = document.getElementById("func");
+        while (list.hasChildNodes()) {
+          list.removeChild(list.firstChild);
+        }
+      }
+    </script>
+    <div class="row">
+    <div class="col">
+  <div class="func" id="func">
+ 
+         <div class="container" id="Note">
+            <div class="card" style="width:400px">
+              <div class="card-body">
+                <script>
+                  document.write(Date());
+                </script>
+                <h4 class="card-title"><input type="text" placeholder="Add Title" class="title" id="title"></h4>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea><br>
+                <a class="btn btn-primary" id="save-btn" onclick="savedPage">Save</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <a class="btn btn-primary" onclick="myFunction();">Delete</a>
+                
+              </div>
+
+            </div>
+         </div>
+         </div>
+       
+    </div>
+        <div class="col">
+          <div class="func" id="func">
+        
+            <div class="container" id="Note">
+              <div class="card" style="width:400px">
+                <div class="card-body">
+                  <script>
+                    document.write(Date());
+                  </script>
+                  <h4 class="card-title"><input type="text" placeholder="Add Title" class="title" id="title"></h4>
+                  <textarea class="form-control" rows="5" id="comment" name="text"></textarea><br>
+                  <a class="btn btn-primary" id="save-btn"
+                    onclick="savedPage">Save</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="btn btn-primary" onclick="myFunction();">Delete</a>
+        
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+        </div>
+            <div class="col">
+              <div class="func" id="func">
+            
+                <div class="container" id="Note">
+                  <div class="card" style="width:400px">
+                    <div class="card-body">
+                      <script>
+                        document.write(Date());
+                      </script>
+                      <h4 class="card-title"><input type="text" placeholder="Add Title" class="title" id="title"></h4>
+                      <textarea class="form-control" rows="5" id="comment" name="text"></textarea><br>
+                      <a class="btn btn-primary" id="save-btn"
+                        onclick="savedPage">Save</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a class="btn btn-primary" onclick="myFunction();">Delete</a>
+            
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+  
+</div>
+ <br>
+ <button onclick="addNote();" id="add">New Note</button>
+    
+  
+
+    </body>
+</html>  

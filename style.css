@@ -1,0 +1,122 @@
+title{
+    text-align: center;
+}
+
+h1,h3{
+    text-align: center;
+}
+.jumbotron {
+    padding:20px 20px 20px 20px;
+    margin:0px auto;
+    background: #802BB1 ;
+    color:floralwhite;
+    position: sticky;
+    text-decoration-color: peachpuff;
+}
+
+body{
+    font-family: Helvetica;
+    background:#FEF9C7;
+    margin: auto;
+    align-items: center;
+}
+
+.box{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 5px;
+    ;
+
+}
+
+.box a{
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-indent: -9999px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+
+#color1{
+    background: #494B68;
+
+}
+
+#color2{
+    background: #A6607C;
+    
+}
+
+#color3{
+    background: #806543;
+    
+}
+
+#color4{
+    background: #CCCCCC;
+    
+}
+
+#color5{
+    background: #FEF9C7;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+}
+
+
+
+
+.container{
+   padding: 20px 20px;
+}
+
+ .title{
+    width: 358px;
+    height: 50px;
+}
+
+.body{
+    width: 350px;
+    height: 250px;
+}
+
+input[type=text]:focus {
+  background-color;
+  outline: blueviolet;
+}
+
+input[type=text]{
+    border: 2px solid whitesmoke;
+}
+
+textarea{
+    height: 250px;
+    width: 350px;
+}
+
+
+
+#add{
+      border-radius: 25px;
+  background: #802BB1;
+  padding: 10px 10px; 
+  width: 100px;
+  height: 50px;  
+  margin: auto;
+}
